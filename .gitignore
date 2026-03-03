@@ -1,0 +1,22 @@
+# Mac System Files
+.DS_Store
+
+# Windows System Files
+Thumbs.db
+
+# VS Code Settings
+.vscode/
+
+# API Keys or Environemnt Variables
+.env
+
+# Executables
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Other compiled outputs
+*.out
+a.out
