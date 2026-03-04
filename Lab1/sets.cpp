@@ -41,27 +41,31 @@ class Sets : public SetsInterface
         bool isSubset(const SetsInterface& otherSet) const
         {
 
-            map<int, bool> dict;
+            /**
+             * Sequence of Steps
+            */
+
+            map<int, bool> dictB;
 
             for (int i = 0; i < otherSet.getSize(); i++)
             {
-                if(dict.empty())
+                if(dictB.empty())
                 {
-                    dict[otherSet.getElement(i)] = true;
+                    dictB[otherSet.getElement(i)] = true;
                 }
-                else if (dict[otherSet.getElement(i)])
+                else if (dictB[otherSet.getElement(i)])
                 {
                     continue;
                 }
                 else
                 {
-                    dict[otherSet.getElement(i)] = true;
+                    dictB[otherSet.getElement(i)] = true;
                 }
             }
 
             for (int i = 0; i < getSize(); i++)
             {
-                if (dict[getElement(i)])
+                if (dictB[getElement(i)])
                 {
                     continue;
                 }
@@ -74,9 +78,43 @@ class Sets : public SetsInterface
 
         bool isProperSubset(const SetsInterface& otherSet) const
         {
+            /**
+             * Sequence of Steps
+            */
+
             if (isSubset(otherSet))
             {
-                return true;
+                map<int, bool> dictA;
+
+                for (int i = 0; i < getSize(); i++)
+                {
+                    if(dictA.empty())
+                    {
+                        dictA[getElement(i)] = true;
+                    }
+                    else if (dictA[getElement(i)])
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        dictA[getElement(i)] = true;
+                    }
+                }
+
+                for (int i = 0; i < otherSet.getSize(); i++)
+                {
+                    if (dictA[otherSet.getElement(i)])
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
             }
             else
             {
@@ -86,6 +124,9 @@ class Sets : public SetsInterface
 
         void printOrderedPairs(const SetsInterface& mainSet, const SetsInterface& otherSet) const
         {
+            /**
+             * Sequence of Steps
+            */
             cout << endl;
         }
 
