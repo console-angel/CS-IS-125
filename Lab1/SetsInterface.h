@@ -1,5 +1,10 @@
-/**@file SetsInterface.h*/
+/*
+* Name: Angel Gomez
+* Assignment: LAB 1 - Sets
+* Date: March 1, 2026
+*/
 
+/**@file SetsInterface.h*/
 class SetsInterface
 {
     public:

@@ -1,3 +1,9 @@
+/*
+* Name: Angel Gomez
+* Assignment: LAB 1 - Sets
+* Date: March 1, 2026
+*/
+
 #include <iostream>
 #include <map>
 #include <vector>
@@ -69,9 +75,11 @@ class Sets : public SetsInterface
                 {
                     continue;
                 }
+                cout << "False: A is not a subset of B" << endl;
                 return false;
             }
 
+            cout << "True: A is a subset of B" << endl;
             return true;
 
         }
@@ -110,16 +118,13 @@ class Sets : public SetsInterface
                     }
                     else
                     {
+                        cout << "True: A is a proper subset of B" << endl;
                         return true;
                     }
                 }
-
-                return false;
             }
-            else
-            {
-                return false;
-            }
+            cout << "False: A is not a proper subset of B" << endl;
+            return false;
         }
 
         void printOrderedPairs(const SetsInterface& mainSet, const SetsInterface& otherSet) const
@@ -127,12 +132,14 @@ class Sets : public SetsInterface
             /**
              * Sequence of Steps
             */
-            cout << endl;
+           for (int i = 0; i < mainSet.getSize(); i++)
+           {
+                cout << "{ ";
+                for (int j = 0; j < otherSet.getSize(); j++)
+                {
+                    cout << "(" << mainSet.getElement(i) << ", " << otherSet.getElement(j) << ") ";
+                }
+                cout << " }" << endl;
+           }
         }
-
-
-
-
-
-
 };
