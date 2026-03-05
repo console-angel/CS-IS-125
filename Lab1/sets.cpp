@@ -35,7 +35,7 @@ class Sets : public SetsInterface
 
         int getElement(const int& pos) const
         {
-            if (pos >=0 && pos < getSize())
+            if (pos >= 0 && pos < getSize())
             {
                 return data[pos];
             }
