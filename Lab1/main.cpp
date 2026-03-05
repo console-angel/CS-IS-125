@@ -14,6 +14,7 @@ int main(void)
     setA->addElement(1);
     setA->addElement(2);
     setA->addElement(3);
+    setA->addElement(0);
 
     cout << "SetA: { ";
     for (int i = 0; i < setA->getSize(); i++)
@@ -21,12 +22,13 @@ int main(void)
         cout << setA->getElement(i) << " ";
     }
     cout << "}" << endl;
-
+    
     setB->addElement(3);
     setB->addElement(1);
     setB->addElement(3);
     setB->addElement(2);
     setB->addElement(4);
+    setB->addElement(0);
 
     cout << "SetB: { ";
     for (int i = 0; i < setB->getSize(); i++)
