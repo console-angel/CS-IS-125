@@ -5,6 +5,20 @@
 */
 
 /**@file SetsInterface.h*/
+#ifndef _SETS_INTERFACE_H_
+#define _SETS_INTERFACE_H_
+
+/*
+      UML Diagram: Sets
+   ------------------------
+   + addElement(elem: int): void
+   + getElement(pos: int): int
+   + getSize(): int
+   + isSubset(b: SetsInterface): bool
+   + isProper(b: SetsInterface): bool
+   + printOrderedPairs(a: SetsInterface, b: SetsInterface): void
+
+*/
 class SetsInterface
 {
     public:
@@ -49,4 +63,5 @@ class SetsInterface
         */
         virtual void printOrderedPairs(const SetsInterface& mainSet, const SetsInterface& otherSet) const = 0;
 
-};
+}; 
+#endif

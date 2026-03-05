@@ -84,7 +84,6 @@ class Sets : public SetsInterface
 
             cout << "True: A is a subset of B" << endl << endl;
             return true;
-
         }
 
         bool isProperSubset(const SetsInterface& otherSet) const
