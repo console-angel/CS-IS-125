@@ -9,7 +9,7 @@
 #define _SETS_INTERFACE_H_
 
 /*
-      UML Diagram: Sets
+          UML Diagram
    ------------------------
    + addElement(elem: int): void
    + getElement(pos: int): int
