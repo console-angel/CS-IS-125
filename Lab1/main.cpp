@@ -9,7 +9,6 @@
 int main(void)
 {
     Sets* setA = new Sets();
-
     Sets* setB = new Sets();
 
     setA->addElement(1);
@@ -23,9 +22,10 @@ int main(void)
     }
     cout << "}" << endl;
 
-    setB->addElement(1);
-    setB->addElement(2);
     setB->addElement(3);
+    setB->addElement(1);
+    setB->addElement(3);
+    setB->addElement(2);
     setB->addElement(4);
 
     cout << "SetB: { ";
