@@ -1,3 +1,12 @@
+/**
+ * Name: Angel Gomez
+ * Assignment: Lab 2 - Binary
+ * 
+ * Description: This program takes an integer input from the user and converts it to its binary representation. 
+ * If the input is negative, it converts it to its two's complement binary representation.
+ * 
+ * Date: March 11, 2026
+ */
 #include <iostream>
 #include <string>
 
