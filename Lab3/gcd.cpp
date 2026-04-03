@@ -32,9 +32,12 @@ int main(void)
     cout << "Enter Integer Value For B: ";
     cin >> dividend;
 
-    if (divisor == 0 || dividend == 0)
+    bool isZero = (divisor == 0 || dividend == 0);
+    bool isNegative = (divisor < 0 || dividend < 0);
+
+    if (isZero or isNegative)
     {
-        cout << "Please Enter A Non-Zero Integer Values.";
+        cout << "Please Enter A Non-Zero & Non-Negative Integer Values." << endl << endl;
         main();
     }
     else
