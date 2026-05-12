@@ -1,3 +1,8 @@
+/**
+* Name: Angel Gomez
+* Assignment: Lab 4
+*/
+
 #include <iostream>
 
 using namespace std;
